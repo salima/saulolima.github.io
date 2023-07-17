@@ -32,7 +32,7 @@ export default function AboutMe() {
             </Title>
           </Container>
           <Row className="align-items-center mt-5">
-            <Col className="d-flex flex-column text-center">
+            <Col className="d-flex flex-column text-left">
               <Container>
                 <p>{bio}</p>
                 {moreInfo && <p>{moreInfo}</p>}

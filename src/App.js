@@ -24,7 +24,7 @@ const themes = {
   light: {
     name: "light",
     color: "#45413C",
-    background: "#F5F2E8",
+    background: "#FFFFFF",
   },
   dark: {
     name: "dark",

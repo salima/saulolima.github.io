@@ -145,7 +145,7 @@ export default function AllPosts() {
               xs={1}
               md={2}
               lg={3}
-              className="g-4 justify-content-center row"
+              className="g-4 justify-content-left row"
             >
               {searchInput.length > 0
                 ? filteredResults.map(function ({

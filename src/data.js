@@ -27,127 +27,8 @@ export const Blog = <Icon icon="ph:link-bold" />;
 export const moreInfo =
   "Sou um entusiasta da inteligência artificial e motivado por desafios. Ao longo de minha trajetória profissional de mais de 15 anos de experiência no mercado de tecnologia, tive a oportunidade de ocupar posições operacionais, táticas e estratégicas, além de liderar equipes compostas por mais de 50 profissionais de diversas áreas, especialidades e níveis de senioridade. Acredito que a liderança efetiva envolve a capacidade de inspirar, desenvolver e motivar as pessoas. Com isso, tenho ajudado constantemente equipes a criar e arquitetar produtos inovadores que atendam as expectativas do negócio, bem como os desenvolvedores, em aprimorarem suas habilidades e se tornarem profissionais melhores e mais capacitados.";
 
-/* Skills
- ************************************************************** 
-  Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
-*/
-export const skillData = [
-  {
-    id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
-  },
-  {
-    id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
-  },
-  {
-    id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
-  },
-  {
-    id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
-  },
-  {
-    id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
-  },
-  {
-    id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
-  },
-  {
-    id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
-  },
-  {
-    id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
-    name: "Git",
-  },
-  {
-    id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
-  },
-];
-
-/* Skills
- ************************************************************** 
-  Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
-*/
-export const postsData = [
-  {
-    id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
-  },
-  {
-    id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
-  },
-  {
-    id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
-  },
-  {
-    id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
-  },
-  {
-    id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
-  },
-  {
-    id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
-  },
-  {
-    id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
-  },
-  {
-    id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
-    name: "Git",
-  },
-  {
-    id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
-  },
-];
-
-
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 export const resume = null;
-
-/* Projects
- ************************************************************** 
-  List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
-*/
-export const filteredProjects = ["example-1", "example-2", "example-3"];
-
-// Replace the defualt GitHub image for matching repos below (images imported above - lines 4-5)
-export const projectCardImages = [
-  {
-    name: "example-1",
-    image: Logo,
-  },
-];
 
 /* Contact Info
  ************************************************************** 
@@ -187,8 +68,7 @@ export const linkedinData = [
   }
 ];
 
-/* Projects
+/* Posts
  ************************************************************** 
-  List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredPosts = ["example-1", "example-2", "example-3"];
+export const filteredPosts = [];
