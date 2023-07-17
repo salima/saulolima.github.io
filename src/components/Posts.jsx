@@ -77,7 +77,7 @@ export default function Posts() {
               </Row>
               {data.length > 3 && (
                 <Container className="text-center mt-5">
-                  <Link to="/All-Posts">
+                  <Link to="/Publicacoes">
                     <Button
                       size="lg"
                       variant={
