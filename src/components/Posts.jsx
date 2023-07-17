@@ -39,7 +39,7 @@ export default function Posts() {
   );
 
   return (
-    <Element name={"Posts"} id="Posts">
+    <Element name={"Posts"} id="publicacao">
       <section className="section">
         <Container>
           <Container className="d-flex">

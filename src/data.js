@@ -180,7 +180,7 @@ export const linkedinData = [
   },
   {
     id: 4,
-    image: "https://pt.linkedin.com/pulse/rompendo-barreiras-interdepartamentais-na-evolu%C3%A7%C3%A3o-do-saulo-lima",
+    image: "https://media.licdn.com/dms/image/C4D12AQFcgSbkAl0JQg/article-cover_image-shrink_600_2000/0/1605378562771?e=2147483647&v=beta&t=SigKRcgfj96kMlgVQlMTwNbLKySZpHUBZiJvx3qBr-o",
     name: "Rompendo barreiras interdepartamentais na evolução do produto",
     description: "#produto #comunicação #alinhamento #tecnologia #negocio",
     url: "https://pt.linkedin.com/pulse/o-resultado-de-sua-empresa-pode-estar-sendo-impactado-saulo-lima"

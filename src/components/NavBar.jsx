@@ -13,15 +13,13 @@ import Logo from "../images/logo.svg";
 
 const navLinks = {
   routes: [
-    { id: "1R", name: "Home", route: "/" },
-    { id: "2R", name: "All Projects", route: "/All-Projects" },
+    { id: "1R", name: "Inicial", route: "/" }
   ],
   to: [
-    { id: "1T", name: "Home", to: "Home" },
-    { id: "2T", name: "About Me", to: "About" },
-    { id: "3T", name: "Skills", to: "Skills" },
-    { id: "4T", name: "Projects", to: "Projects" },
-    { id: "5T", name: "Contact", to: "Contact" },
+    { id: "1T", name: "Inicial", to: "Home" },
+    { id: "2T", name: "Sobre", to: "sobre" },    
+    { id: "3T", name: "Publicações", to: "publicacao" },
+    { id: "4T", name: "Contato", to: "contato" },
   ],
 };
 

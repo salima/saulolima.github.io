@@ -13,7 +13,7 @@ const StyledSection = styled.section`
 
 export default function Contact() {
   return (
-    <Element name={"Contact"} id="contact">
+    <Element name={"Contact"} id="contato">
       <StyledSection className="d-flex flex-column justify-content-center">
         <Container className="d-flex">
           <Title>
