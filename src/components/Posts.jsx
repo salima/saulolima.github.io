@@ -84,7 +84,7 @@ export default function Posts() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      Todas as <Icon icon="icomoon-free:list" /> publicações
+                      Todas as publicações
                     </Button>
                   </Link>
                 </Container>
