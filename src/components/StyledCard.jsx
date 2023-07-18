@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// Icons
-import { Icon } from "@iconify/react";
+
 // Media
 import GH from "../images/GH.svg";
 // Components
@@ -18,7 +17,7 @@ const StyledCardComponent = styled.div`
     .card-link {
       text-decoration: none;
       font-size: 1.5rem;
-      color: ${({ theme }) => theme.color};
+      color: var(--primary-light);
 
       &:hover {
         color: var(--primary);
@@ -47,17 +46,12 @@ export default function StyledCard({ image, name, description, url }) {
         <Card.Body className="overflow-auto text-left">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          {/* {demo !== "" ? (
-            <Card.Link href={demo} target="blanck">
-              {"Live Demo "}
-              <Icon icon="icon-park-outline:code-computer" />
-            </Card.Link>
-          ) : null} */}
         </Card.Body>
         <Card.Footer className="text-center">
-          <Card.Link href={url} target="blanck">
-            {"Quero ler  "}
-            <Icon icon="icomoon-free:book" />
+          <Card.Link href={url} 
+            target="_blank"
+            className="btn btn-outline-dark">
+            {"Quero ler"}
           </Card.Link>
         </Card.Footer>
       </Card>
