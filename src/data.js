@@ -2,7 +2,10 @@
 import { Icon } from "@iconify/react";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+//import threads from "./images/icon/threads.svg";
+
+// Projects Images (add your images to the images directory and import below)
+//import Logo from "./images/logo.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -72,3 +75,28 @@ export const linkedinData = [
  ************************************************************** 
 */
 export const filteredPosts = [];
+
+
+/* Posts
+ ************************************************************** 
+*/
+export const socialData = [
+  {
+    id: 1,
+    name: "Linkedin",
+    icon: "icomoon-free:linkedin",
+    url: "https://www.linkedin.com/in/saulo.lima"
+  },
+  {
+    id: 2,
+    name: "Instagram",
+    icon: "icomoon-free:instagram",
+    url: "https://www.instagram.com/_saulo.lima/"
+  },
+  {
+    id: 3,
+    name: "Threads",
+    icon: "icomoon-free:threads",
+    url: "https://www.threads.net/@_saulo.lima"
+  }
+];
