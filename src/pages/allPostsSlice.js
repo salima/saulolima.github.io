@@ -17,7 +17,6 @@ export const allPostsSlice = createSlice({
       state.isLoading = false;
       state.error = "";
       state.data = linkedinData;
-      console.log("addDefaultCase");
     })
   },
 });

@@ -1,26 +1,24 @@
 import styled from "styled-components";
-import { useSelector } from "react-redux";
-import { selectData } from "../pages/homeSlice";
+
 import { Element } from "react-scroll";
 // Data
-import { moreInfo } from "../data";
+import { MyInfos } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
+import  Sobre from "../images/sobre.jpg";
 
 const StyledAboutMe = styled.section`
   p {
     font-size: 1.25rem;
   }
   .img {
-    width: 18rem;
-    height: 18rem;
+    width: 16rem;
+    height: 16rem;
   }
 `;
 
 export default function AboutMe() {
-  const { avatar_url, bio } = useSelector(selectData);
-
   return (
     <Element name={"About"} id="sobre">
       <StyledAboutMe className="section">
@@ -34,17 +32,16 @@ export default function AboutMe() {
           <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column text-left">
               <Container>
-                <p>{bio}</p>
-                {moreInfo && <p>{moreInfo}</p>}
+                <p>{MyInfos.bio}</p>
               </Container>
             </Col>
-            <Col className="d-none d-md-block text-center">
+            <Col className="d-none d-md-block text-center ">
               <img
-                src={avatar_url}
-                alt="GitHub Avatar"
+                src={Sobre}
+                alt="Saulo Lima"
                 loading="lazy"
-                className="mx-auto rounded-circle"
-                style={{ width: "15rem", height: "15rem" }}
+                className="mx-auto rounded"
+                style={{ width: "30rem", height: "30rem" }}
               />
             </Col>
           </Row>
