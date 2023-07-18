@@ -4,7 +4,6 @@ import { selectData } from "../pages/homeSlice";
 
 // Components
 import Hero from "../components/Hero";
-import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
 import Posts from "../components/Posts";
 import { BackToTop } from "../components/globalStyledComponents";
@@ -24,7 +23,6 @@ export default function Home() {
     <>
       <Hero />
       <main>
-        <AboutMe />
         <Posts />
         <Contact />
       </main>
