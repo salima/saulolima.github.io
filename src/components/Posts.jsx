@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 // Data
 import { filteredPosts } from "../data";
-// Icons
-import { Icon } from "@iconify/react";
+
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";

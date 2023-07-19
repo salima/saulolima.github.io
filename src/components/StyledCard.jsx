@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 // Media
-import GH from "../images/GH.svg";
+import SL from "../images/logo.svg";
 // Components
 import { Card } from "react-bootstrap";
 
@@ -39,7 +39,7 @@ export default function StyledCard({ image, name, description, url }) {
       <Card>
         <Card.Img
           variant="top"
-          src={image ? image : GH}
+          src={image ? image : SL}
           alt={name}
           className="mx-auto"
         />

@@ -27,6 +27,7 @@ const StyledHero = styled.header`
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0.2;
     background: ${({ theme }) =>
       theme.name === "light"
         ? "linear-gradient(135deg, var(--primary), var(--bs-light))"
@@ -88,16 +89,22 @@ export default function Hero() {
       <Container>
         <Row className="align-items-center text-center">
           <Col>
-            <h1 className="mb-3 display-3 title">{name}</h1>
+            <h6 className="text-left" >
+              Com mais de década e meia de experiência no mercado de tecnologia, 
+              tive a oportunidade de ocupar posições operacionais, táticas e estratégicas, 
+              e liderar equipes compostas por mais de 50 profissionais de diversas áreas, 
+              especialidades e níveis de senioridade. 
+             </h6>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
             </div>
           </Col>
           <Col className="d-none d-md-block">
-            <img
+          <img
               src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
+              height="100px"
+              width="100px"
+              alt="Saulo Lima"
             />
           </Col>
         </Row>

@@ -13,9 +13,9 @@ Variables
   --primary-dark: #316e7e;
   --border: 1px solid #797B7B;
   --transition: all 0.3s linear;
-  --nav-height: 61px;
+  --nav-height: 40px;
   --min-footer-height: 11vh;
-  --card-height: 29rem;
+  --card-height: 32rem;
 }
 
 /*
@@ -72,8 +72,7 @@ a:hover {
   }
 
   .card-img-top {
-    height: 60%;
-    object-fit: contain;
+    height: 50%;
   }
 }
 
@@ -88,13 +87,13 @@ a:hover {
   }
   .form-group {
       max-width: 750px;
-    }
+    }   
 }
 
  @media screen and (min-width: 1367px) {
-  .link-icons:hover {
-    color: var(--primary);
-  }
+    .link-icons:hover {
+      color: var(--primary);
+    }
   }
 `;
 

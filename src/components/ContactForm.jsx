@@ -98,7 +98,7 @@ export default function ContactForm() {
           {formspreeUrl && (
             <Button
               size="lg"
-              variant={theme === "light" ? "outline-dark" : "outline-light"}
+              variant={theme === "light" ? "outline-light" : "outline-light"}
               type="submit"
               disabled={isProcessing}
               className="my-4"
@@ -116,7 +116,7 @@ export default function ContactForm() {
             onClose={() => setSuccess(false)}
             dismissible
           >
-            <Alert.Heading>Success! I will contact you soon.</Alert.Heading>
+            <Alert.Heading>Obrigado pelo contato. Em breve entrarei em contato!</Alert.Heading>
           </Alert>
           <Alert
             show={danger}

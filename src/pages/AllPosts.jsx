@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectData as homeData } from "../pages/homeSlice";
-import { selectData, selectError } from "./allPostsSlice";
+import { selectData } from "./allPostsSlice";
 import styled from "styled-components";
 // Icons
 import { Icon } from "@iconify/react";

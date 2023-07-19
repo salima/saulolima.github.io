@@ -17,9 +17,8 @@ const navLinks = {
   ],
   to: [
     { id: "1T", name: "Inicial", to: "Home" },
-    { id: "2T", name: "Sobre", to: "sobre" },    
-    { id: "3T", name: "Publicações", to: "publicacao" },
-    { id: "4T", name: "Contato", to: "contato" },
+    { id: "2T", name: "Publicações", to: "publicacao" },
+    { id: "3T", name: "Contato", to: "contato" },
   ],
 };
 
@@ -98,11 +97,10 @@ export default function NavBar() {
         <Container>
           <Navbar.Brand>
             <img
-              alt="React Logo"
+              alt="SL"
               src={Logo}
               width="35"
               height="35"
-              className="rounded-circle"
             />
           </Navbar.Brand>
           <Navbar.Toggle

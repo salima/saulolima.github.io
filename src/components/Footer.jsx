@@ -1,10 +1,16 @@
+
+import { useAppContext } from "../appContext";
 import styled from "styled-components";
 // Components
 import SocialLinks from "./SocialLinks";
 
-const StyledFooter = styled.footer`
+//background: var(--primary);
+export default function Footer() {
+  const { theme } = useAppContext();
+
+  const StyledFooter = styled.footer`
   min-height: var(--min-footer-height);
-  background: var(--primary);
+  background: var(${theme === "light" ? "var(--primary)" : "light"});
 
   a {
     color: #45413c;
@@ -15,7 +21,6 @@ const StyledFooter = styled.footer`
   }
 `;
 
-export default function Footer() {
   return (
     <StyledFooter className="d-flex align-items-center justify-content-center p-2">
       <SocialLinks />
