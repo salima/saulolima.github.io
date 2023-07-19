@@ -10,6 +10,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 // import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
 // Images
 import Logo from "../images/logo.svg";
+import LogoOff from "../images/logo-off.svg";
 
 const navLinks = {
   routes: [
@@ -54,7 +55,7 @@ const StyledSwitch = styled.label`
 
 // Spacer for fixed Navigation bar
 const FixedNavSpacer = styled.div`
-  height: var(--nav-height);
+  height: var(--nav-height);  
 `;
 
 function ThemeToggle() {
@@ -98,7 +99,7 @@ export default function NavBar() {
           <Navbar.Brand>
             <img
               alt="SL"
-              src={Logo}
+              src={theme === "light" ? Logo : LogoOff}
               width="35"
               height="35"
             />

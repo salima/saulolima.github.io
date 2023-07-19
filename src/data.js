@@ -4,9 +4,13 @@ import { Icon } from "@iconify/react";
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
+
+import BGContact from "./images/rede.jpeg";
+
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };
+export { BGContact as BackgroundContact };
 
 
 /* About Me
@@ -16,7 +20,7 @@ export { HeroDark as Dark };
 export const MyInfos = 
   {
     "name": "Saulo Lima",
-    "company": "",
+    "slogan": "Ajudando pessoas e organizações a alcançarem resultados através da tecnologia",
     "blog": "",
     "email": "falecom@saulolima.com.br",
     "bio": "Sou um entusiasta da inteligência artificial e motivado por desafios. Ao longo de minha trajetória profissional de mais de 15 anos de experiência no mercado de tecnologia, tive a oportunidade de ocupar posições operacionais, táticas e estratégicas, além de liderar equipes compostas por mais de 50 profissionais de diversas áreas, especialidades e níveis de senioridade. Acredito que a liderança efetiva envolve a capacidade de inspirar, desenvolver e motivar as pessoas. Com isso, tenho ajudado constantemente equipes a criar e arquitetar produtos inovadores que atendam as expectativas do negócio, bem como os desenvolvedores, em aprimorarem suas habilidades e se tornarem profissionais melhores e mais capacitados."

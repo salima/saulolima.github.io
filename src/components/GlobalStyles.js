@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
 =============== 
 Variables
 ===============
+Color logo: #35495e
 */
 :root {
   --primary-light: #797B7B;
@@ -13,7 +14,7 @@ Variables
   --primary-dark: #316e7e;
   --border: 1px solid #797B7B;
   --transition: all 0.3s linear;
-  --nav-height: 40px;
+  --nav-height: 60px;
   --min-footer-height: 11vh;
   --card-height: 32rem;
 }
@@ -34,11 +35,6 @@ a:hover {
 
 .navbar {
   border-bottom: var(--border);
-
-  img {
-    background: ${({ theme }) =>
-      theme.name === "light" ? "#45413C" : "#797B7B"};
-  }
 }
 
 .link-icons {
