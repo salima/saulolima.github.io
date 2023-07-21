@@ -187,7 +187,7 @@ export default function AllPosts() {
             </Row>
             <Container className="d-flex justify-content-center mt-4">
               {pageItems.length <= 2 ? (
-                <Pagination size="lg" className="mb-4">
+                <Pagination className="mb-5">
                   {pageItems}
                 </Pagination>
               ) : (

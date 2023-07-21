@@ -86,8 +86,8 @@ a:hover {
 }
 
 .page-item.active .page-link {
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--outline-dark);
+    border-color: var(--outline-dark);
 }
   
 .btn-outline-dark{

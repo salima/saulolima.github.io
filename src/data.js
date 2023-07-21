@@ -55,7 +55,7 @@ export const linkedinData = [
     name: "Rompendo barreiras interdepartamentais na evolução do produto",
     description: "#produto #comunicação #alinhamento #tecnologia #negocio",
     url: "https://pt.linkedin.com/pulse/o-resultado-de-sua-empresa-pode-estar-sendo-impactado-saulo-lima"
-  }
+  },
 ];
 
 /* Posts
