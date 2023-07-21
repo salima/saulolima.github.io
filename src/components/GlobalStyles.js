@@ -8,11 +8,12 @@ Variables
 Color logo: #35495e
 */
 :root {
-  --primary-light: #797B7B;
   /* Primary Color */
-  --primary: #797B7B;
+  --primary: #cfe2ff;
+  --primary-light: #FBFDFF;
   --primary-dark: #316e7e;
-  --border: 1px solid #797B7B;
+  --outline-dark: #36a2ef;
+  --border: 1px solid ##cfe2ff;
   --transition: all 0.3s linear;
   --nav-height: 60px;
   --min-footer-height: 11vh;
@@ -44,8 +45,20 @@ a:hover {
   color: ${({ theme }) => theme.color};
 
   &:hover {
-        color: var(--primary);
-      }
+    color: var(--outline-dark);
+  }
+}
+
+.nav-link {
+  &:hover {
+    color: var(--outline-dark);
+  }
+  &:active {
+    color: var(--outline-dark);
+  }    
+}
+.nav-link-active {
+  color: var(--outline-dark);
 }
 
 .section {
@@ -76,6 +89,16 @@ a:hover {
     background-color: var(--primary);
     border-color: var(--primary);
 }
+  
+.btn-outline-dark{
+  background-color: var(--outline-dark);  
+  color: ${({ theme }) => theme.color};
+
+  &:hover {
+      color: var(--outline-dark);  
+      background-color: var(--primary);  
+    }
+  }
 
 @media screen and (min-width: 800px) {
   .link-icons {

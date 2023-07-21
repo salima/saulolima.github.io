@@ -16,7 +16,7 @@ export default function Footer() {
     color: #45413c;
 
     &:hover {
-      color: #fbfdff;
+      color: var(--outline-dark);
     }
   }
 `;

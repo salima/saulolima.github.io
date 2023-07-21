@@ -98,7 +98,7 @@ export default function ContactForm() {
           {formspreeUrl && (
             <Button
               size="lg"
-              variant={theme === "light" ? "outline-light" : "outline-light"}
+              variant={theme === "light" ? "outline-light" : "outline-dark"}
               type="submit"
               disabled={isProcessing}
               className="my-4"

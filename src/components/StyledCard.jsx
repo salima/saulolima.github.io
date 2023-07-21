@@ -8,7 +8,7 @@ import { Card } from "react-bootstrap";
 
 const StyledCardComponent = styled.div`
   .card {
-    background: ${({ theme }) => (theme.name === "light" ? "" : "#797B7B")};
+    background: ${({ theme }) => (theme.name === "light" ? "" : "var(--primary-light)")};
     box-shadow: ${({ theme }) =>
       theme.name === "light"
         ? "0 3px 10px rgb(0 0 0 / 0.2)"
@@ -16,19 +16,16 @@ const StyledCardComponent = styled.div`
 
     .card-link {
       text-decoration: none;
-      font-size: 1.5rem;
-      color: var(--primary-light);
-
-      &:hover {
-        color: var(--primary);
-      }
+      font-size: 1.5rem;     
     }
+
     .card-text {
       font-size: 0.9rem;
     }
+    
     .card-footer {
       border-top: var(--border);
-      background: ${({ theme }) => (theme.name === "light" ? "" : "#404040")};
+      background: ${({ theme }) => (theme.name === "light" ? "" : "#717171")};
     }
   }
 `;

@@ -15,6 +15,10 @@ addIcon('icomoon-free:threads', {
 const StyledSocialLinks = styled.div`
   a {
     margin: 0 1rem;
+    color: #45413c;
+    &:hover {
+      color: var(--outline-dark);
+    }
   }
 `;
 

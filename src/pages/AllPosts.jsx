@@ -31,7 +31,7 @@ const StyledSection = styled.section`
   .row {
     min-height: var(--card-height);
   }
-
+  
   @media screen and (min-width: 800px) {
     .input-group {
       width: 75%;
@@ -192,27 +192,36 @@ export default function AllPosts() {
                 </Pagination>
               ) : (
                 <Pagination className="mb-5">
-                  <Pagination.Prev
-                    onClick={() =>
-                      activePage === 1
-                        ? setActivePage(pageItems.length)
-                        : setActivePage(activePage - 1)
-                    }
-                  />
-                  {pageItems[0]}
-                  <Pagination.Ellipsis />
+                   {activePage > 1 ? (
+                    <Pagination.Prev
+                      onClick={() =>
+                        activePage === 1
+                          ? setActivePage(pageItems.length)
+                          : setActivePage(activePage - 1)
+                      }
+                    />
+                  ) : ("")}
+                  {activePage > 1 ? ( pageItems[0] ) : ("")}
+
+                  {activePage > 1  ? ( <Pagination.Ellipsis /> ) : ("")}
+                  
                   <Pagination.Item active={true}>
                     {activePage}
                   </Pagination.Item>
-                  <Pagination.Ellipsis />
-                  {pageItems[pageItems.length - 1]}
-                  <Pagination.Next
+
+                  {activePage < pageItems.length -1  ? ( <Pagination.Ellipsis /> ) : ("")}
+
+                  {activePage < pageItems.length ? ( pageItems[pageItems.length - 1] ) : ("")}   
+
+                  {activePage < pageItems.length? (                    
+                    <Pagination.Next
                     onClick={() =>
                       activePage === pageItems.length
                         ? setActivePage(1)
                         : setActivePage(activePage + 1)
                     }
                   />
+                  ) : ("")}
                 </Pagination>
               )}
             </Container>

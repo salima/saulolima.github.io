@@ -5,15 +5,15 @@ import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 import ContactForm from "./ContactForm";
-import { BackgroundContact,BackgroundContactOff } from "../data";
+import {Light, Dark } from "../data";
 
 const StyledSection = styled.section`
   min-height: 89vh;
   padding-top: var(--nav-height);
-  color: #ffffff;
-  
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${({ theme }) => (theme.name === "light" ? BackgroundContact : BackgroundContactOff)}) ;
+  background: ${({ theme }) =>
+   theme.name === "light"
+     ? `url(${Light}) center center fixed no-repeat`
+     : `url(${Dark}) center center fixed no-repeat`};
   background-size: cover;
 `;
 

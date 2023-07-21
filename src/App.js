@@ -19,16 +19,16 @@ import Home from "./pages/Home";
 import AllPosts from "./pages/AllPosts";
 import NotFound from "./pages/NotFound";
 
-const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+//const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
   light: {
     name: "light",
     color: "#45413C",
-    background: "#FFFFFF",
+    background: "#FBFDFF",
   },
   dark: {
     name: "dark",
-    color: "#FBFDFF",
+    color: "#FBFDFF", //#36a2ef
     background: "#27272A",
   },
 };
@@ -41,8 +41,8 @@ export default function App() {
 
   React.useEffect(
     function () {
-      const updateTheme = () =>
-        darkMode ? setTheme("dark") : setTheme("light");
+      const updateTheme = () => setTheme("dark")
+        //darkMode ? setTheme("dark") : setTheme("dark");
       updateTheme();
     },
     [setTheme, dispatch]
@@ -50,8 +50,8 @@ export default function App() {
 
   window
     .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) =>
-      e.matches ? setTheme("dark") : setTheme("light")
+    .addEventListener("change", (e) => setTheme("dark")
+      //e.matches ? setTheme("dark") : setTheme("light")
     );
 
   if (isLoading) {

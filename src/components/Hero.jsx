@@ -4,8 +4,10 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 // Icons
 import { Icon } from "@iconify/react";
+
 // Media
 import Logo from "../images/logo.svg";
+
 import { Light, Dark } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
@@ -16,7 +18,7 @@ const StyledHero = styled.header`
   position: relative;
   display: grid;
   place-items: center;
-  max-width: 1920px;
+  //max-width: 1920px;
   margin: 0 auto;
   min-height: calc(100vh - var(--nav-height));
 
@@ -27,7 +29,6 @@ const StyledHero = styled.header`
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
     background: ${({ theme }) =>
       theme.name === "light"
         ? "linear-gradient(135deg, var(--primary), var(--bs-light))"
@@ -100,12 +101,12 @@ export default function Hero() {
             </div>
           </Col>
           <Col className="d-none d-md-block">
-          <img
+          {/* <img
               src={Logo}
               height="100px"
               width="100px"
               alt="Saulo Lima"
-            />
+            /> */}
           </Col>
         </Row>
         <Row className="align-items-end down-container">

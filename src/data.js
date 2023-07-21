@@ -1,19 +1,11 @@
-// Skills icons - https://icon-sets.iconify.design/
-import { Icon } from "@iconify/react";
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
-
-import BGContact from "./images/rede.jpeg";
-import BGContactOff from "./images/rede-off.jpeg";
+import HeroLight from "./images/light.jpeg";
+import HeroDark from "./images/dark.jpeg";
 
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };
-export { BGContact as BackgroundContact };
-export { BGContactOff as BackgroundContactOff };
-
 
 /* About Me
  **************************************************************

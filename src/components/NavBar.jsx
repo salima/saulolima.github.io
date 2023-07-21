@@ -7,7 +7,6 @@ import styled from "styled-components";
 import { Icon } from "@iconify/react";
 // Components
 import { Container, Nav, Navbar } from "react-bootstrap";
-// import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
 // Images
 import Logo from "../images/logo.svg";
 import LogoOff from "../images/logo-off.svg";
@@ -60,7 +59,6 @@ const FixedNavSpacer = styled.div`
 
 function ThemeToggle() {
   const { theme, toggleTheme, closeExpanded } = useAppContext();
-
   return (
     <StyledSwitch onClick={closeExpanded}>
       <input
@@ -117,7 +115,7 @@ export default function NavBar() {
                         <ScrollLink
                           to={el.to}
                           spy={true}
-                          activeClass="active"
+                          activeClass="nav-link-active"
                           className="nav-link"
                           onClick={closeExpanded}
                         >
@@ -133,7 +131,7 @@ export default function NavBar() {
                           to={el.route}
                           className={
                             pathname === el.route
-                              ? "nav-link active"
+                              ? "nav-link-active"
                               : "nav-link"
                           }
                           onClick={closeExpanded}
@@ -144,9 +142,9 @@ export default function NavBar() {
                     );
                   })}
             </Nav>
-            <Nav>
+            {/* <Nav>
               <ThemeToggle />
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
