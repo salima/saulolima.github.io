@@ -17,7 +17,7 @@ Color logo: #35495e
   --transition: all 0.3s linear;
   --nav-height: 60px;
   --min-footer-height: 11vh;
-  --card-height: 32rem;
+  --card-height: 28rem;
 }
 
 /*

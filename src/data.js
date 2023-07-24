@@ -10,6 +10,11 @@ export { HeroDark as Dark };
 /* About Me
  **************************************************************
   Add a second paragraph for the about me section.
+
+Color: #35495e
+FONTES:
+SL: Space_Mono
+SauloLima: Source_Sans_3
 */
 export const MyInfos = 
   {
@@ -72,7 +77,7 @@ export const socialData = [
     id: 1,
     name: "Linkedin",
     icon: "icomoon-free:linkedin",
-    url: "https://www.linkedin.com/in/saulo.lima"
+    url: "https://www.linkedin.com/in/saulolima/"
   },
   {
     id: 2,
