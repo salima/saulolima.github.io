@@ -6,9 +6,7 @@ import SL from "../images/logo.svg";
 // Components
 import { Card } from "react-bootstrap";
 
-const StyledCardComponent = styled.div`
-     
-
+const StyledCardComponent = styled.div`   
   .card {
     border-radius: 10px;
     background: #1b1b1b;
