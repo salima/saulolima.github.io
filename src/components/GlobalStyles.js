@@ -47,8 +47,13 @@ a:hover {
 }
 
 .navbar {
-  background-color: #233D54;
-  border-bottom: var(--border);
+  background-color: transparent;
+}
+
+.navbar-active {
+  background-color: #1b1b1b;
+  border-bottom: #000000;
+	box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 50%);
 }
 
 #publicacao{

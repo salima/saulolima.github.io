@@ -20,9 +20,6 @@ import AllPosts from "./pages/AllPosts";
 import NotFound from "./pages/NotFound";
 
 
-//Color logo: #35495e
-//background-color: #011039;
-//const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
   light: {
     name: "light",
@@ -31,17 +28,26 @@ const themes = {
   },
   dark: {
     name: "dark",
-    color: "#FBFDFF", //#36a2ef
-    background: "#FBFDFF", //#01111c "#061726" "#011039", #36a2ef
+    color: "#FBFDFF", 
+    background: "#FBFDFF",
   },
 };
 
 export default function App() {
-  const { theme, setTheme } = useAppContext();
+  const { theme, setTheme, setNavColor } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
 
+  const listenScrollEvent = () => {
+    
+    if(window.location.href.includes("Publicacoes")){
+      setNavColor("navbar-active");
+      return;
+    }
+    window.scrollY > 10 ? setNavColor("navbar-active") : setNavColor("navbar");
+  };
+  
   React.useEffect(
     function () {
       const updateTheme = () => setTheme("dark")
@@ -56,6 +62,13 @@ export default function App() {
     .addEventListener("change", (e) => setTheme("dark")
       //e.matches ? setTheme("dark") : setTheme("light")
     );
+    
+    React.useEffect(() => {
+      window.addEventListener("scroll", listenScrollEvent);
+      return () => {
+        window.removeEventListener("scroll", listenScrollEvent);
+      };
+    }, []);
 
   if (isLoading) {
     return (

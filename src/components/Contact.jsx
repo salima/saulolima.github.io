@@ -7,13 +7,13 @@ import { Title } from "./globalStyledComponents";
 import ContactForm from "./ContactForm";
 
 const StyledSection = styled.section`
-  min-height: 65vh;
-  padding-top: 100px;
+  min-height: 70vh;
+  padding-top: 110PX;
 `;
 
 export default function Contact() {
   return (
-    <Element name={"Contact"} id="contato">          
+    <Element name={"Contact"} id="falaComigo">          
       <StyledSection className="d-flex flex-column">   
         <Container className="d-flex">                
           <Title>

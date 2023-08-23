@@ -17,7 +17,7 @@ const navLinks = {
   to: [
     { id: "1T", name: "Inicial", to: "Home" },
     { id: "2T", name: "Publicações", to: "publicacao" },
-    { id: "3T", name: "Contato", to: "contato" },
+    { id: "2T", name: "Contato", to: "falaComigo" },
   ],
 };
 
@@ -27,18 +27,19 @@ const FixedNavSpacer = styled.div`
 `;
 
 export default function NavBar() {
-  const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
+  const { theme, isExpanded, closeExpanded, toggleExpanded, navColor } = useAppContext();
   const { pathname } = useLocation();
-
+  
   return (
     <>
       <FixedNavSpacer />
       <Navbar
         id="nav"
+        className={navColor}
         collapseOnSelect={true}
         expand="lg"
         expanded={isExpanded}
-        fixed="top"
+        fixed="top"        
       >
         <Container>
           <Navbar.Brand>
@@ -89,9 +90,6 @@ export default function NavBar() {
                     );
                   })}
             </Nav>
-            {/* <Nav>
-              <ThemeToggle />
-            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

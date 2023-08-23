@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { selectData as homeData } from "../pages/homeSlice";
 import { selectData } from "./allPostsSlice";
 import styled from "styled-components";
+import { useAppContext } from "../appContext";
 // Icons
 import { Icon } from "@iconify/react";
 // Components
@@ -40,6 +41,7 @@ const StyledSection = styled.section`
 `;
 
 export default function AllPosts() {
+  const { setNavColor } = useAppContext();
   const [searchInput, setSearchInput] = React.useState("");
   const [filteredResults, setFilteredResults] = React.useState([]);
   const [pageItems, setPageItems] = React.useState([]);
@@ -53,7 +55,7 @@ export default function AllPosts() {
     },
     [name]
   );  
-
+  
   React.useEffect(
     function () {
       if (searchInput !== "") {
@@ -114,6 +116,7 @@ export default function AllPosts() {
     function () {
       // Anytime the search input changes set the active page back to 1
       setActivePage(1);
+      setNavColor("navbar-active");
     },
     [searchInput]
   );

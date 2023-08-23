@@ -4,7 +4,8 @@ const AppContext = React.createContext();
 
 const AppProvider = function ({ children }) {
   const [theme, setTheme] = React.useState("light");
-  const [isExpanded, setExpanded] = React.useState(false);
+  const [isExpanded, setExpanded] = React.useState(false);  
+  const [navColor, setNavColor] = React.useState("navbar");
 
   const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
@@ -25,6 +26,8 @@ const AppProvider = function ({ children }) {
         isExpanded,
         toggleExpanded,
         closeExpanded,
+        navColor,
+        setNavColor,        
       }}
     >
       {children}

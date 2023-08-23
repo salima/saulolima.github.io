@@ -1,4 +1,3 @@
-import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 // Components
 import SocialLinks from "./SocialLinks";
