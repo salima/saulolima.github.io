@@ -7,16 +7,15 @@ import SL from "../images/logo.svg";
 import { Card } from "react-bootstrap";
 
 const StyledCardComponent = styled.div`
+     
+
   .card {
-    border-radius: 20px;
-    background: ${({ theme }) => (theme.background)};
-    box-shadow: ${({ theme }) =>
-      theme.name === "light"
-        ? "0 3px 10px rgb(0 0 0 / 0.2)"
-        : "0 3px 10px rgb(0 0 0 / 0.2)"};
+    border-radius: 10px;
+    background: #1b1b1b;
+    
+    box-shadow: none;
       &:hover {
-        border-radius: 20px;
-        background: #ffffff;
+        border-radius: 10px;
         box-shadow: none;
         .card-link {          
           color:${({ theme }) => (theme.background)};
@@ -24,13 +23,13 @@ const StyledCardComponent = styled.div`
         .img{
           -webkit-mask-image: none;
         }
-      }
-    
+      }   
+
     .card-link {      
       text-decoration: none;
-      font-size: 1.5rem;         
-      color: #ffffff;    
-    }
+      font-size: 1.4rem;         
+      color: #959595;
+    }      
 
     .img{
       -webkit-mask-image: linear-gradient(to top, transparent 10%, black 100%);
@@ -60,8 +59,14 @@ export default function StyledCard({ image, name, description, url }) {
         />
         <Card.Link href={url} target="_blank">
           <Card.Body className="overflow-auto text-left">        
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>{description}</Card.Text>          
+            <Card.Title className="card-link">{name}</Card.Title>
+            <br/>
+            <Card.Text className="card-link">{description}</Card.Text> 
+            <br/>
+            <Card.Link href={url} className="card-link"
+              target="_blank">
+              {"LER ARTIGO COMPLETO"}
+          </Card.Link> 
           </Card.Body>
         </Card.Link>
         {/* <Card.Footer className="text-left">

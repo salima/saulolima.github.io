@@ -123,7 +123,7 @@ export default function AllPosts() {
         <StyledSection className="d-flex flex-column justify-content-center">
           <Container className="d-flex">
             <Title>
-              <h2>
+              <h2 className="card-title">
                 Todas publicações
               </h2>
               <div className="underline"></div>

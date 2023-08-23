@@ -1,5 +1,4 @@
 import React from "react";
-import { useAppContext } from "../appContext";
 import { useSelector } from "react-redux";
 import {
   selectData,
@@ -16,7 +15,6 @@ import StyledCard from "./StyledCard";
 
 export default function Posts() {
   const [mainPosts, setMainPosts] = React.useState([]);
-  const { theme } = useAppContext();
   const data = useSelector(selectData);
 
   React.useEffect(
@@ -43,7 +41,7 @@ export default function Posts() {
         <Container>
           <Container className="d-flex">
             <Title>
-              <h2><b>PUBLICAÇÕES</b> MAIS RECENTES</h2>
+              <h2 className="card-title">PUBLICAÇÕES MAIS RECENTES</h2>
               <div className="underline"></div>
             </Title>
           </Container>
@@ -79,9 +77,7 @@ export default function Posts() {
                   <Link to="/Publicacoes">
                     <Button
                       size="lg"
-                      variant={
-                        theme === "light" ? "outline-dark" : "outline-light"
-                      }
+                      variant="outline-dark"
                     >
                       Todas as publicações
                     </Button>

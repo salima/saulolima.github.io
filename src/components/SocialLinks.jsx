@@ -14,10 +14,12 @@ addIcon('icomoon-free:threads', {
 
 const StyledSocialLinks = styled.div`
   a {
+    opacity: 0.5;
     margin: 0 1rem;
-    color: #45413c;
+    color: ${({ theme }) => (theme.color)};
     &:hover {
-      color: var(--outline-dark);
+      opacity: 1;
+      color: ${({ theme }) => (theme.color)};
     }
   }
 `;
@@ -37,6 +39,7 @@ export default function SocialLinks() {
             aria-label={name}
             className="link-icons"
             target="_blank"
+            rel="noreferrer"
             >
             <Icon icon={icon}/>
           </a>

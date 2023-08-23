@@ -19,6 +19,9 @@ import Home from "./pages/Home";
 import AllPosts from "./pages/AllPosts";
 import NotFound from "./pages/NotFound";
 
+
+//Color logo: #35495e
+//background-color: #011039;
 //const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
   light: {
@@ -29,7 +32,7 @@ const themes = {
   dark: {
     name: "dark",
     color: "#FBFDFF", //#36a2ef
-    background: "#0a0a0a",
+    background: "#FBFDFF", //#01111c "#061726" "#011039", #36a2ef
   },
 };
 

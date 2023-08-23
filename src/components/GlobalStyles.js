@@ -6,18 +6,30 @@ const GlobalStyles = createGlobalStyle`
 Variables
 ===============
 Color logo: #35495e
+background-color: #011039;
+background-color: #01111c;
+background-color: #FAFAFA;
+background-color: #00acff;
 */
+
 :root {
   /* Primary Color */
-  --primary: #cfe2ff;
-  --primary-light: #FBFDFF;
-  --primary-dark: #316e7e;
-  --outline-dark: #36a2ef;
-  --border: 1px solid ##cfe2ff;
-  --transition: all 0.3s linear;
-  --nav-height: 60px;
+  --primary: #011039;
+  --primary-light: #00acff;
+  --primary-dark: #01111c;
+  --outline-dark: #01111c;
+  
+  --border: 1px solid #011039;
+  
+  --transition: all 0.3s linear;  
+  
   --min-footer-height: 11vh;
-  --card-height: 28rem;
+  
+  --card-height: 35rem;
+  
+  --nav-height: 65px;
+  --nav-link: #00acff;
+  --nav-link-active: #00acff;
 }
 
 /*
@@ -35,7 +47,12 @@ a:hover {
 }
 
 .navbar {
+  background-color: #233D54;
   border-bottom: var(--border);
+}
+
+#publicacao{
+  background-color: #FFFFFF;
 }
 
 .link-icons {
@@ -43,22 +60,21 @@ a:hover {
   font-size: 2.25rem;
   transition: var(--transition);
   color: ${({ theme }) => theme.color};
-
+  opacity: 0.5;
   &:hover {
-    color: var(--outline-dark);
+    opacity: 1;
+    color: ${({ theme }) => (theme.color)};
   }
 }
 
 .nav-link {
+  color: ${({ theme }) => theme.color};
   &:hover {
-    color: var(--outline-dark);
+    color:var(--nav-link);
   }
-  &:active {
-    color: var(--outline-dark);
-  }    
 }
 .nav-link-active {
-  color: var(--outline-dark);
+  color:var(--nav-link-active);
 }
 
 .section {
@@ -74,14 +90,13 @@ a:hover {
 
 .card {
   height: var(--card-height);
-  border: var(--border);
   transition: all .2s ease-in-out;
   &:hover {
     transform: scale(1.03);
   }
 
   .card-img-top {
-    height: 50%;
+    height: 100%;
   }
 }
 
@@ -89,14 +104,16 @@ a:hover {
     background-color: var(--outline-dark);
     border-color: var(--outline-dark);
 }
-  
+.card-title {          
+  color: #01111c;    
+}
 .btn-outline-dark{
   background-color: var(--outline-dark);  
   color: ${({ theme }) => theme.color};
 
   &:hover {
       color: var(--outline-dark);  
-      background-color: var(--primary);  
+      background-color:#ffffff;  
     }
   }
 
@@ -111,7 +128,7 @@ a:hover {
 
  @media screen and (min-width: 1367px) {
     .link-icons:hover {
-      color: var(--primary);
+      color:var(--nav-link);
     }
   }
 `;

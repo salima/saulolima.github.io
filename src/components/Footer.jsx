@@ -1,29 +1,33 @@
-
-import { useAppContext } from "../appContext";
+import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 // Components
 import SocialLinks from "./SocialLinks";
 
 //background: var(--primary);
 export default function Footer() {
-  const { theme } = useAppContext();
-
   const StyledFooter = styled.footer`
   min-height: var(--min-footer-height);
-  background: var(${theme === "light" ? "var(--primary)" : "light"});
+  background-color: #01111c;
 
   a {
-    color: #45413c;
+    color: #ffffff;
 
     &:hover {
-      color: var(--outline-dark);
+      color:var(--nav-link);
     }
   }
 `;
 
   return (
-    <StyledFooter className="d-flex align-items-center justify-content-center p-2">
-      <SocialLinks />
+  <StyledFooter className="d-flex align-items-center justify-content-center p-2">
+    <div className="container d-flex justify-content-between">
+      <div className="d-flex align-items-center justify-content-start p-2">
+        <span>© {new Date().getFullYear()} Saulo Lima</span>
+      </div>
+      <div className="d-flex align-items-center justify-content-end p-2">
+        <SocialLinks />
+      </div>
+    </div>
     </StyledFooter>
   );
 }
