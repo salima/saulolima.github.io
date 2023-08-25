@@ -79,7 +79,7 @@ export default function Hero() {
           <Col>
             <h6 className="me" >
               Você decidiu virar a chave e dar próximo passo na direção do sucesso? Então vou ajudar você a ter resultados incríveis.
-              Com mais de 15 anos no mercado de tecnologia ajudando pessoas e times a construirem a <b>soluções</b> que atendam as expectativas do negócio atravez a tecnologia.
+              Com mais de 15 anos no mercado de tecnologia ajudando pessoas e times a construirem a <b>soluções</b> que atendam as expectativas do negócio atraves a tecnologia.
              </h6>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
