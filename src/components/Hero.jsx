@@ -9,13 +9,23 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Spin } from "./globalStyledComponents";
 import SocialLinks from "./SocialLinks";
 import Background from './background';
+import Foto from "../images/saulo-lima.jpg";
 
 const StyledHero = styled.header`
-  position: relative;
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
-  min-height: calc(100vh - var(--nav-height));
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    min-height: calc(100vh - var(--nav-height));
+  
+  .profileImg {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  }
   
   .me{
     font-family: degular-display,sans-serif;
@@ -76,14 +86,11 @@ export default function Hero() {
             </div>
           </Col>
           <Col className="d-none d-md-block">  
-          {/* <img src="https://assets.website-files.com/63062614beab2e820ecdb18d/63062614beab2e14c7cdb1a9_foto_8.jpg"          
-           width="400" alt="Foto Felippe Percigo" ></img>       */}
-          {/* <img
-              src={Logo}
-              height="100px"
-              width="100px"
-              alt="Saulo Lima"
-            /> */}
+          <img src={Foto}
+            width="400" 
+            alt="Foto Saulo Lima" 
+            className="profileImg">
+            </img>           
           </Col>
         </Row>
         <Row className="align-items-end down-container">
