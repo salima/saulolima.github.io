@@ -17,7 +17,7 @@ const navLinks = {
   to: [
     { id: "1T", name: "Inicial", to: "Home" },
     { id: "2T", name: "Publicações", to: "publicacao" },
-    { id: "2T", name: "Contato", to: "falaComigo" },
+    { id: "3T", name: "Contato", to: "falaComigo" },
   ],
 };
 
