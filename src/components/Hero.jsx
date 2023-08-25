@@ -30,8 +30,8 @@ const StyledHero = styled.header`
   .me{
     font-family: degular-display,sans-serif;
     color: ${({ theme }) => (theme.color)};
-    font-size: 22px;
-    line-height: 34px;    
+    font-size: 19px;
+    line-height: 24px;    
     text-align: justify;
     text-justify: inter-word;
     margin: 4rem 0rem 4rem 0rem;
@@ -78,8 +78,8 @@ export default function Hero() {
         <Row className="align-items-center text-center ">
           <Col>
             <h6 className="me" >
-              Você decidiu virar a chave e dar próximo passo na direção do sucesso? Então vou ajudar você a ter resultados incríveis.
-              Com mais de 15 anos no mercado de tecnologia ajudando pessoas e times a construirem a <b>soluções</b> que atendam as expectativas do negócio atraves a tecnologia.
+              Com um histórico de mais de 15 anos no setor de tecnologia, tenho auxiliado pessoas e equipes a desenvolver soluções que não apenas atendam, mas superem as expectativas de negócio por meio da tecnologia.
+              <br/><br/> Juntos, podemos abrir novos horizontes e trilhar um caminho rumo à excelência.
              </h6>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
@@ -87,7 +87,7 @@ export default function Hero() {
           </Col>
           <Col className="d-none d-md-block">  
           <img src={Foto}
-            width="400" 
+            width="350" 
             alt="Foto Saulo Lima" 
             className="profileImg">
             </img>           
