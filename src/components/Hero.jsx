@@ -10,7 +10,6 @@ import { Spin } from "./globalStyledComponents";
 import SocialLinks from "./SocialLinks";
 import Background from './background';
 import Foto from "../images/saulo-lima.jpg";
-import Assinatura from "../images/assinatura.png";
 import Autography from '../fonts/Autography-DOLnW.otf';
 
 const StyledHero = styled.header`
