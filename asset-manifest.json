@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1566e1d9.css",
-    "main.js": "/static/js/main.6129b527.js",
+    "main.css": "/static/css/main.1cafa257.css",
+    "main.js": "/static/js/main.d6c9c854.js",
     "static/media/saulo-lima.jpg": "/static/media/saulo-lima.a792bbdfba8c6cbc1f5f.jpg",
     "service-worker.js": "/service-worker.js",
     "static/media/Autography-DOLnW.otf": "/static/media/Autography-DOLnW.3c234b5ecf87be9b3099.otf",
     "index.html": "/index.html",
     "static/media/logo-off.svg": "/static/media/logo-off.c2173c5142fb6fa55521c9bcda00dccf.svg",
     "static/media/logo.svg": "/static/media/logo.b9088a903610fae3e06464c844579ec1.svg",
-    "main.1566e1d9.css.map": "/static/css/main.1566e1d9.css.map",
-    "main.6129b527.js.map": "/static/js/main.6129b527.js.map"
+    "main.1cafa257.css.map": "/static/css/main.1cafa257.css.map",
+    "main.d6c9c854.js.map": "/static/js/main.d6c9c854.js.map"
   },
   "entrypoints": [
-    "static/css/main.1566e1d9.css",
-    "static/js/main.6129b527.js"
+    "static/css/main.1cafa257.css",
+    "static/js/main.d6c9c854.js"
   ]
 }
