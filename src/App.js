@@ -18,7 +18,6 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import AllPosts from "./pages/AllPosts";
 import NotFound from "./pages/NotFound";
-import ReactGA from 'react-ga';
 
 const themes = {
   light: {
@@ -38,9 +37,6 @@ export default function App() {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
-
-  const TRACKING_ID = "G-LZ3VP0YNCN"; 
-  ReactGA.initialize(TRACKING_ID);
   
   const listenScrollEvent = () => {
     
@@ -71,6 +67,22 @@ export default function App() {
       return () => {
         window.removeEventListener("scroll", listenScrollEvent);
       };
+    }, []);
+
+    React.useEffect(() => {
+      const scriptGoogletagmanager = document.createElement('script');
+      const script = document.createElement('script');
+    
+      scriptGoogletagmanager.src = "https://www.googletagmanager.com/gtag/js?id=G-LZ3VP0YNCN";
+      scriptGoogletagmanager.async = true;
+      script.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LZ3VP0YNCN');"
+
+      document.body.appendChild(scriptGoogletagmanager);
+      document.body.appendChild(script);
+    
+      return () => {
+        document.body.removeChild(script);
+      }
     }, []);
 
   if (isLoading) {
