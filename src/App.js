@@ -18,7 +18,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import AllPosts from "./pages/AllPosts";
 import NotFound from "./pages/NotFound";
-
+import ReactGA from 'react-ga';
 
 const themes = {
   light: {
@@ -39,6 +39,9 @@ export default function App() {
   const error = useSelector(selectError);
   const dispatch = useDispatch();
 
+  const TRACKING_ID = "G-LZ3VP0YNCN"; 
+  ReactGA.initialize(TRACKING_ID);
+  
   const listenScrollEvent = () => {
     
     if(window.location.href.includes("Publicacoes")){

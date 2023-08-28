@@ -10,16 +10,17 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.1",
     "react-scroll": "^1.8.7",
+    "react-tsparticles": "^1.37.2",
     "styled-components": "^6.0.2",
     "workbox-core": "^7.0.0",
     "workbox-expiration": "^7.0.0",
     "workbox-precaching": "^7.0.0",
     "workbox-routing": "^7.0.0",
-    "workbox-strategies": "^7.0.0",    
-    "react-tsparticles": "^1.37.2"
+    "workbox-strategies": "^7.0.0"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
@@ -27,7 +28,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "cp CNAME ./public/ && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
