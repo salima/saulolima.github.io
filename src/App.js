@@ -73,9 +73,9 @@ export default function App() {
       const scriptGoogletagmanager = document.createElement('script');
       const script = document.createElement('script');
     
-      scriptGoogletagmanager.src = "https://www.googletagmanager.com/gtag/js?id=G-LZ3VP0YNCN";
+      scriptGoogletagmanager.src = "https://www.googletagmanager.com/gtag/js?id=G-25QBVQJ9R3";
       scriptGoogletagmanager.async = true;
-      script.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LZ3VP0YNCN');"
+      script.innerHTML = "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-25QBVQJ9R3');"
 
       document.body.appendChild(scriptGoogletagmanager);
       document.body.appendChild(script);
