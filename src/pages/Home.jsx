@@ -14,7 +14,7 @@ export default function Home() {
 
   React.useEffect(
     function () {
-      document.title = `${name} | Portfolio`;
+      document.title = `${name} | Executivo, CTO, Head Of Technology, Tech Lead, Senior Software Engineer .Net`;
     },
     [name]
   );
